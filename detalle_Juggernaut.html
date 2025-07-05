@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juggernaut - Dota 2</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #1e1e1e;
+      color: white;
+    }
+
+    .zoom-hover {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .zoom-hover:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
+      z-index: 2;
+    }
+
+    .logo-esquina {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+    }
+
+    .logo-esquina img {
+      width: 100%;
+      height: auto;
+    }
+
+    footer {
+      background-color: #570000;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body class="detalle-pagina" style="background-image: url('Imagenes png/Fondo principal.png'); background-size: cover; background-position: center; background-repeat: no-repeat; color: white;"></body>
+<body>
+  <header style="background-color: #570000; color: white; text-align: center; padding: 1em;">
+    <h1>🦸 Detalle de Juggernaut</h1>
+    <nav style="margin-top: 1em;">
+      <a href="index.html" style="color: #fafafa; margin: 0 1em;">🏠 Inicio</a>
+      <a href="login.html" style="color:#fafafa; margin: 0 1em;">🔐 Login</a>
+      <a href="detalle.html" style="color: #fafafa; margin: 0 1em;">🦸‍♂️ Comprar Arcanas de Héroes</a>
+      <a href="descarga.html" style="color: #fafafa; margin: 0 1em;">⬇️ Descarga</a>
+      <a href="novedades.html" style="color: #fafafa; margin: 0 1em;">📰 Novedades</a>
+      <a href="contacto.html" style="color: #fafafa; margin: 0 1em;">📩 Contacto</a>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL CON BANNERS LATERALES -->
+  <main style="padding: 8em 2em; display: flex; justify-content: center; gap: 2em; align-items: center;">
+
+    <!-- Banner lateral izquierdo -->
+    <aside style="display: flex; align-items: center;">
+      <img src="Imagenes png/Publicidad zein 1.png" alt="Publicidad izquierda"
+           class="zoom-hover"
+           style="width: 500px; height: 700px; object-fit: cover; 
+                  border: 4px solid #FFD700; border-radius: 10px; 
+                  margin-left: 0; margin-right: auto;
+                  transform: translateX(-150px) translateY(50px);">
+    </aside>
+
+    <!-- Contenido del héroe -->
+    <section style="max-width: 800px;">
+      <img src="Imagenes png/Juggernaut.png" alt="Pudge"
+           class="zoom-hover"
+           style="display: block; margin: 0 auto 1em; max-width: 400px; border-radius: 12px;">
+      <h2>Juggernaut</h2>
+      <p>Juggernaut es un heroe que reduce a sus enemigos en una ráfaga de cuchilladas. Corriendo y girando en la batalla con temerario desenfreno.</p>
+
+      <h3>🛠️ Habilidades</h3>
+      <ul>
+        <li><strong>Furia de Hoja:</strong> Provoca un torbellino de fuerza destructiva alrededor de Juggernaut que lo hace inmune a los efectos negativos, aumentando su resistencia a la magia un 80%.</li>
+        <li><strong>Omnicorte:</strong>Juggernaut se abalanza sobre las unidades enemigas, para después acuchillar a su objetivo y a otras unidades enemigas cercanas a mayor frecuencia de ataque. Juggernaut es invulnerable durante el efecto.</li>
+      </ul>
+
+      <a href="https://www.eloargame.com/market/dota/rarity/arcana" target="_blank" class="btn-ver" style="display: block; width: fit-content; margin: 1.5em auto 0;">Comprar</a>
+    </section>
+
+    <!-- Banner lateral derecho -->
+    <aside style="display: flex; align-items: center;">
+      <img src="Imagenes png/Publicidad zein 2.png" alt="Publicidad derecha"
+           class="zoom-hover"
+           style="width: 500px; height: 700px; object-fit: cover; 
+                  border: 4px solid #FFD700; border-radius: 10px; 
+                  margin-left: auto; margin-right: 0;
+                  transform: translateX(150px) translateY(50px);">
+    </aside>
+  </main>
+
+  <!-- BANNER HORIZONTAL INFERIOR -->
+  <div style="text-align: center; margin-top: 1em;">
+    <img src="Imagenes png/plg anuncio.png" alt="Publicidad inferior"
+         class="zoom-hover"
+         style="width: 90%; max-width: 1200px; height: auto; object-fit: cover;
+                border: 4px solid #FFD700; border-radius: 10px;
+                transform: translateY(-50px);">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Valve Corporation - Todos los derechos reservados 🎮</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<div class="logo-esquina">
+<img src="Imagenes png/Icono dota 2.png" alt="Logo Dota 2">
+</div>
+</html>
+
+

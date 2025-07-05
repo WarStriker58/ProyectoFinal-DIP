@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #570000;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+header h1 {
+  margin-bottom: 0.5em;
+}
+
+nav a {
+  color: #fafafa;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #8a0000;
+  color: #ffffff;
+}
+
+main {
+  padding: 7em 2em 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+form {
+  background-color: #2c2c2c;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  max-width: 500px;
+  width: 100%;
+  color: #fff;
+}
+
+form h2 {
+  color: #ff4444;
+  margin-bottom: 0.5em;
+}
+
+form p {
+  margin-bottom: 1.5em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1.2em;
+  border: none;
+  border-radius: 6px;
+  background-color: #444;
+  color: white;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid #ff4444;
+  background-color: #333;
+}
+
+button {
+  background-color: #570000;
+  color: white;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8a0000;
+}
+
+footer {
+  background-color: #570000;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.tabla-fila {
+  background-color: #121212;
+  transition: background-color 0.3s ease;
+}
+
+.tabla-fila:hover {
+  background-color: #2a2a2a;
+}
+
+.tabla-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tabla-link:hover {
+  color: #ff6666;
+  text-decoration: underline;
+}
+
+.vista-previa {
+  text-align: center;
+  padding: 1em;
+}
+
+.vista-previa img {
+  display: inline-block;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+td:nth-child(2) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+td:nth-child(2) img {
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+.banner-container {
+  width: 550px;
+  margin: 10px;
+}
+
+.banner, .novedad {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.banner img, .novedad img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.banner::after, .novedad::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  pointer-events: none;
+}
+
+.banner:hover::after, .novedad:hover::after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner:hover img, .novedad:hover img {
+  transform: scale(1.03);
+}
+
+.banner-publicidad {
+  width: 480px;
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner-publicidad img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.banner-publicidad:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 18px rgba(255, 255, 255, 0.2);
+}
+
+.banner-publicidad:hover img {
+  transform: scale(1.05);
+}
+
+.boton-descarga {
+  display: inline-block;
+  background-color: #570000;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-descarga:hover {
+  background-color: #8a0000;
+  color: #dbdbdb;
+}
+
+.bloque-zein {
+  width: 300px;
+  margin: 30px 20px;
+  text-align: center;
+}
+
+.zein-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 15px 0;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.zein-banner {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.zein-banner img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.zein-banner:hover img {
+  transform: scale(1.5);
+}
+
+.zein-grande {
+  width: 120%;
+  margin-left: -10%;
+  transition: transform 0.3s ease;
+}
+
+.zein-grande:hover {
+  transform: scale(1.05);
+}
+
+.efecto-zoom {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.efecto-zoom:hover {
+  transform: scale(1.15);
+}
+
+.bounce-img {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.bounce-img:hover {
+  animation: bounce 0.5s ease;
+}
+
+.catalogo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2em;
+  padding: 8em 2em 4em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tarjeta {
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.03);
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.8em;
+}
+
+.tarjeta h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.btn-ver {
+  display: inline-block;
+  background-color: #570000;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ver:hover {
+  background-color: #8a0000;
+}
+
+aside img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+aside img:hover {
+  transform: scale(1.05);
+}
+
+.banner-publicitario {
+  width: 220px;
+  height: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.banner-publicitario:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(255, 255, 255, 0.2);
+}
+
+.banner-inferior {
+  width: 100%;
+  max-width: 1200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.banner-inferior:hover {
+  transform: scale(1.02);
+}
+
+.banner-grande {
+  width: 500px;
+  height: 800px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.banner-grande:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(255, 255, 255, 0.2);
+}
+
+.banner-horizontal-inferior {
+  width: 1000px;
+  height: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.banner-horizontal-inferior:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 18px rgba(255, 255, 255, 0.2);
+}
+
+/* BANNERS LATERALES NORMALES */
+.banner-lateral {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  max-width: 600px;
+  padding: 10px;
+}
+
+.banner-lateral img {
+  width: 100%;
+  max-height: 700px;
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  animation: flotar 4s infinite alternate ease-in-out;
+}
+
+.banner-lateral img:hover {
+  transform: translateY(10px) scale(1.1);
+}
+
+.banner-lateral.izquierdo {
+  left: 150px;
+}
+
+.banner-lateral.derecho {
+  right: 150px;
+}
+
+/* RESPONSIVO IGUAL A NOVEDADES */
+@media screen and (max-width: 1200px) {
+  .banner-lateral {
+    position: static !important;
+    transform: none !important;
+    display: block !important;
+    width: 90% !important;
+    max-width: 600px !important;
+    margin: 2em auto !important;
+    text-align: center;
+    z-index: auto;
+  }
+
+  .banner-lateral.izquierdo,
+  .banner-lateral.derecho {
+    left: auto !important;
+    right: auto !important;
+  }
+
+  .banner-lateral img {
+    width: 100% !important;
+    max-height: none !important;
+    animation: none !important;
+    transform: none !important;
+    border: 2px solid #FFD700;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.imagen-contacto-estilo {
+  width: 600px;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid #FFD700;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -10em; /* ✅ Subir la imagen visualmente */
+  transition: transform 0.3s ease;
+}
+
+.imagen-contacto-estilo:hover {
+  transform: scale(1.03);
+}
+
+/* Versión responsive */
+@media screen and (max-width: 800px) {
+  .imagen-contacto-estilo {
+    width: 90%;
+    top: -2em; /* ✅ Aún se eleva un poco en móviles */
+    margin: 0 auto;
+  }
+}
+
+.contacto-main {
+  margin-top: 120px;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* 🟡 Coloca el formulario más abajo */
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.formulario-contacto {
+  background-color: #2c2c2c;
+  padding: 2em;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  margin-top: 10em;
+  margin-bottom: 2em; /* 🟡 Empuja un poco más hacia abajo */
+}
+
+.formulario-contacto h2 {
+  margin-top: 0;
+  color: #ff4444;
+  text-align: center;
+}
+
+.formulario-contacto p {
+  text-align: center;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  border: none;
+  background-color: #444;
+  color: white;
+}
+
+.formulario-contacto button {
+  width: 100%;
+  padding: 0.7em;
+  background-color: #570000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #8a0000;
+}
+
+.imagen-descarga-estilo {
+  width: 800px;
+  max-width: 95%;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid #FFD700;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  display: block;
+  margin: 180px auto 0 auto; /* 👈 Igual que antes */
+  transition: transform 0.3s ease;
+}
+
+.imagen-descarga-estilo:hover {
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 800px) {
+  .imagen-descarga-estilo {
+    width: 90%;
+    margin-top: 120px;
+  }
+}
+
+/* ✅ Ajuste especial solo para la sección de HÉROES (detalle.html) */
+.detalle-pagina .banner-lateral.izquierdo {
+  left: 60px; /* Más al centro que el original */
+}
+
+.detalle-pagina .banner-lateral.derecho {
+  right: 60px;
+}
+
+.logo-esquina {
+  position: fixed;
+  top: 12px;
+  left: 20px;
+  z-index: 1100;
+}
+
+.logo-esquina img {
+  height: 60px;
+  width: auto;
+  border-radius: 8px;
+}
