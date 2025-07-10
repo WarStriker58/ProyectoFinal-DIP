@@ -420,13 +420,13 @@ aside img:hover {
   box-shadow: 0 8px 18px rgba(255, 255, 255, 0.2);
 }
 
-/* BANNERS LATERALES NORMALES */
+
 .banner-lateral {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
   z-index: 999;
-  max-width: 600px;
+  max-width: 500px;
   padding: 10px;
 }
 
@@ -513,7 +513,7 @@ aside img:hover {
   padding: 2em;
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* 🟡 Coloca el formulario más abajo */
+  align-items: flex-end; 
   gap: 2em;
   flex-wrap: wrap;
 }
@@ -526,7 +526,7 @@ aside img:hover {
   width: 100%;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   margin-top: 10em;
-  margin-bottom: 2em; /* 🟡 Empuja un poco más hacia abajo */
+  margin-bottom: 2em; 
 }
 
 .formulario-contacto h2 {
@@ -574,7 +574,8 @@ aside img:hover {
   border: 2px solid #FFD700;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
   display: block;
-  margin: 180px auto 0 auto; /* 👈 Igual que antes */
+  margin: 180px auto 0 auto; 
+
   transition: transform 0.3s ease;
 }
 
@@ -589,9 +590,9 @@ aside img:hover {
   }
 }
 
-/* ✅ Ajuste especial solo para la sección de HÉROES (detalle.html) */
+
 .detalle-pagina .banner-lateral.izquierdo {
-  left: 60px; /* Más al centro que el original */
+  left: 60px; 
 }
 
 .detalle-pagina .banner-lateral.derecho {
@@ -600,13 +601,12 @@ aside img:hover {
 
 .logo-esquina {
   position: fixed;
-  top: 12px;
-  left: 20px;
-  z-index: 1100;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
 }
 
 .logo-esquina img {
-  height: 60px;
-  width: auto;
-  border-radius: 8px;
+  width: 50px; /* Ajusta el tamaño como desees */
+  height: auto;
 }

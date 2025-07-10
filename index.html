@@ -5,22 +5,36 @@
   <title>Dota 2</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
 
-  <body style="background-image: url('Imagenes png/Fondo principal.png'); background-size: cover; background-position: center; background-repeat: no-repeat;"></body>
+  <!-- Estilos para el ícono fijo -->
+  <style>
+    .logo-esquina {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 9999;
+    }
+
+    .logo-esquina img {
+      width: 50px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body style="background-image: url('Imagenes png/Fondo principal.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+
 
   <table width="100%" border="0" cellspacing="0" cellpadding="10">
     <!-- ENCABEZADO -->
     <tr bgcolor="#570000" style="color: white;">
       <td colspan="2">
         <div style="display: flex; align-items: center; max-width: 800px; margin: 0 auto;">
-        
           <!-- Contenedor del título y subtítulo centrados -->
           <div style="text-align: center; flex-grow: 1;">
             <h1 style="margin: 0;">🎮 Dota 2</h1>
           </div>
-          
         </div>
         <p style="text-align: center; margin-top: 0;">El primer juego competitivo en revolucionar al mundo 🌍</p>
         <nav style="margin-top: 1em; text-align: center;">
@@ -50,35 +64,36 @@
         </div>
       </td>
     </tr>
+  </table>
 
-    <!-- TABLA DE PÁGINAS -->
-    <table width="100%" border="1" cellpadding="8" cellspacing="0" style="background-color: #000000; border-collapse: collapse;">
-      <tr>
-        <th>🌐 Páginas</th>
-        <th>🖼️ Vista Previa</th>
-        <th>📝 Descripción</th>
-      </tr>
-      <tr class="tabla-fila">
-        <td><a href="detalle.html" class="tabla-link">🦸‍♂️ Comprar Arcanas de Héroes</a></td>
-        <td><a href="detalle.html"><img src="Imagenes png/Todos los heroes.png" alt="Heroes" width="200"></a></td>
-        <td style="color: white;">Encontrarás diversos personajes con habilidades únicas ✨.</td>
-      </tr>
-      <tr class="tabla-fila">
-        <td><a href="Descarga.html" class="tabla-link">⬇️ Descarga</a></td>
-        <td><a href="Descarga.html"><img src="Imagenes png/Logo de dota 2.png" alt="Descarga" width="200"></a></td>
-        <td style="color: white;">Te invitamos a una nueva experiencia, ¡juega ya! 🎉</td>
-      </tr>
-      <tr class="tabla-fila">
-        <td><a href="Novedades.html" class="tabla-link">🆕 Novedades</a></td>
-        <td><a href="Novedades.html"><img src="Imagenes png/Segudna novedad.png" alt="Novedades" width="200"></a></td>
-        <td style="color: white;">Aprende los nuevos cambios del parche 7.38 ⚙️📈.</td>
-      </tr>
-      <tr class="tabla-fila">
-        <td><a href="contacto.html" class="tabla-link">📩 Contacto</a></td>
-        <td><a href="contacto.html"><img src="Imagenes png/Logo de valve.png" alt="Contacto" width="200"></a></td>
-        <td style="color: white;">Contáctate al soporte Valve para más información 🛠️.</td>
-      </tr>
-    </table>
+  <!-- TABLA DE PÁGINAS -->
+  <table width="100%" border="1" cellpadding="8" cellspacing="0" style="background-color: #000000; border-collapse: collapse;">
+    <tr>
+      <th>🌐 Páginas</th>
+      <th>🖼️ Vista Previa</th>
+      <th>📝 Descripción</th>
+    </tr>
+    <tr class="tabla-fila">
+      <td><a href="detalle.html" class="tabla-link">🦸‍♂️ Comprar Arcanas de Héroes</a></td>
+      <td><a href="detalle.html"><img src="Imagenes png/Todos los heroes.png" alt="Heroes" width="200"></a></td>
+      <td style="color: white;">Encontrarás diversos personajes con habilidades únicas ✨.</td>
+    </tr>
+    <tr class="tabla-fila">
+      <td><a href="Descarga.html" class="tabla-link">⬇️ Descarga</a></td>
+      <td><a href="Descarga.html"><img src="Imagenes png/Logo de dota 2.png" alt="Descarga" width="200"></a></td>
+      <td style="color: white;">Te invitamos a una nueva experiencia, ¡juega ya! 🎉</td>
+    </tr>
+    <tr class="tabla-fila">
+      <td><a href="Novedades.html" class="tabla-link">🆕 Novedades</a></td>
+      <td><a href="Novedades.html"><img src="Imagenes png/Segudna novedad.png" alt="Novedades" width="200"></a></td>
+      <td style="color: white;">Aprende los nuevos cambios del parche 7.38 ⚙️📈.</td>
+    </tr>
+    <tr class="tabla-fila">
+      <td><a href="contacto.html" class="tabla-link">📩 Contacto</a></td>
+      <td><a href="contacto.html"><img src="Imagenes png/Logo de valve.png" alt="Contacto" width="200"></a></td>
+      <td style="color: white;">Contáctate al soporte Valve para más información 🛠️.</td>
+    </tr>
+  </table>
 
   <!-- PIE DE PÁGINA -->
   <footer style="background-color: #570000; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
@@ -88,10 +103,6 @@
   <!-- BOOTSTRAP JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<!-- Ícono fijo en esquina superior izquierda -->
-<div class="logo-esquina">
-  <img src="Imagenes png/Icono dota 2.png" alt="Logo Dota 2">
-</div>
 </html>
 
 
