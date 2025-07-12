@@ -2,14 +2,19 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>📩 Contacto - Dota 2</title>
+  <title>Contacto</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome para íconos sociales -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body style="margin: 0; font-family: sans-serif; background-image: url('Imagenes png/Fondo principal.png'); background-size: cover; background-position: center; background-repeat: no-repeat; color: white;">
 
   <!-- ENCABEZADO -->
   <header style="background-color: #570000; color: white; text-align: center; padding: 1em;">
     <h1>📩 Contáctanos</h1>
+    <p style="visibility: hidden;">Espacio</p>
     <nav style="margin-top: 1em;">
       <a href="index.html" style="color: #fafafa; margin: 0 1em;">🏠 Inicio</a>
       <a href="login.html" style="color:#fafafa; margin: 0 1em;">🔐 Login</a>
@@ -49,8 +54,38 @@
   </main>
 
   <!-- PIE DE PÁGINA -->
-  <footer style="background-color: #570000; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
-    <p style="margin: 0;">&copy; 2025 Valve Corporation - Todos los derechos reservados 🎮</p>
+  <footer>
+    <div class="footer-contenido">
+      <div>
+        <h3>Dota 2</h3>
+        <p>Batallas épicas 5v5 en tiempo real. Estrategia, trabajo en equipo y habilidad en su máxima expresión.</p>
+      </div>
+
+      <div>
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="detalle.html">Arcanas de Héroes</a></li>
+          <li><a href="Descarga.html">Descarga</a></li>
+          <li><a href="Novedades.html">Novedades</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Síguenos</h4>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/dota2"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/dota2"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.twitch.tv/dota2ti"><i class="fab fa-twitch"></i></a>
+          <a href="https://discord.gg/dota2"><i class="fab fa-discord"></i></a>
+          <a href="https://www.youtube.com/user/dota2"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      © 2025 Valve Corporation - Todos los derechos reservados. 🧑‍💻
+    </div>
   </footer>
 
   <!-- Bootstrap JS -->
@@ -60,4 +95,3 @@
 <img src="Imagenes png/Icono dota 2.png" alt="Logo Dota 2">
 </div>
 </html>
-
